@@ -1185,6 +1185,16 @@ def build_parser():
         """,
     )
     transport_ffmpeg.add_argument(
+        "--ffmpeg-drmkey",
+        type=str,
+        metavar="DRMKEY",
+        help="""
+            Set the decryption key.
+
+            Example: --ffmpeg-drmkey "keyid:key"
+        """,
+    )
+    transport_ffmpeg.add_argument(
         "--ffmpeg-video-transcode",
         metavar="CODEC",
         help="""
